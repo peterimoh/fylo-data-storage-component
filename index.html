@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="mainContent">
+            <div id="leftside" class="content">
+                <div class="logoSection">
+                    <img id="logo" src="images/logo.svg" alt="fylo-logo">
+
+                </div>
+
+                <div id="control">
+                    <button class="controlButton">
+                    <img class="controlImage" src="images/icon-document.svg" alt="document">
+                </button>
+                    <button class="controlButton">
+                    <img class="controlImage" src="images/icon-folder.svg" alt="file">
+                </button>
+                    <button class="controlButton">
+                    <img class="controlImage" src="images/icon-upload.svg" alt="upload">
+                </button>
+                </div>
+
+
+            </div>
+            <div id="rightside" class="content">
+                <p id="comment">You've used <span id="currentUsage">815 GB</span> of your storage</p>
+                <div id="usage">
+                    <div id="colorFill"></div>
+                    <div id="barBall"></div>
+
+                </div>
+                <p id="barMinLimit" class="usageLimit">0 GB</p>
+                <p id="barMaxLimit" class="usageLimit">1000 GB</p>
+
+                <!--white usage background section-->
+
+                <p id="dataLeft">
+
+
+                    <span id="dataRemaining">185</span> GB LEFT
+                </p>
+                <div id="usageBottom"></div>
+
+            </div>
+        </div>
+        <div id="background"></div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Peter Imoh Victor</a>.
+    </div>
+</body>
+
+</html>

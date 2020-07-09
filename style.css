@@ -1,0 +1,251 @@
+    /*---------frontend master attribution-------*/
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Raleway', sans-serif;
+    }
+    /*-----main page content------*/
+    
+    #mainContent {
+        z-index: 1000;
+    }
+    
+    .content {
+        padding: 30px;
+        padding-bottom: 2px;
+        background-color: hsl(228, 56%, 26%);
+        vertical-align: bottom;
+        display: inline-block;
+        -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.45);
+        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.45);
+    }
+    
+    #container {
+        width: 100%;
+        height: 100vh;
+        background-color: hsl(228, 57%, 11%);
+        position: ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #leftside {
+        z-index: 1000;
+        padding: 27px;
+        padding-right: 100px;
+        margin-right: 20px;
+        border-radius: 10px 75px 10px 10px;
+    }
+    /*-----right content---------*/
+    
+    #comment {
+        font-size: 12px;
+        color: hsl(229, 7%, 55%);
+    }
+    
+    #currentUsage {
+        font-weight: 700;
+        color: #fff;
+    }
+    
+    #rightside {
+        z-index: 1001;
+        border-radius: 10px;
+        color: #fff;
+        position: relative;
+    }
+    
+    #usage {
+        background-color: hsl(229, 54%, 18%);
+        width: 450px;
+        position: relative;
+        height: 14px;
+        border-radius: 1000px;
+        border: 2px solid hsl(229, 54%, 18%);
+    }
+    
+    .usageLimit {
+        font-size: 10px;
+        font-weight: 700;
+    }
+    
+    #dataLeft {
+        position: absolute;
+        background-color: #fff;
+        color: hsl(229, 57%, 11%);
+        padding: 15px;
+        border-radius: 10px 10px 0px 10px;
+        right: 40px;
+        top: -50px;
+        font-size: 10px;
+        margin: 0;
+    }
+    
+    #dataRemaining {
+        font-weight: 700;
+        font-size: 28px;
+    }
+    
+    #usageBottom {
+        content: "";
+        background-color: #fff;
+        height: 20px;
+        left: 93.46%;
+        position: relative;
+        top: -105px;
+        width: 20px;
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+    }
+    
+    #colorFill {
+        width: 81.5%;
+        height: 100%;
+        border-radius: 1000px;
+        background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%))
+    }
+    
+    #barBall {
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        margin-top: -12px;
+        left: 78.9%;
+        position: relative;
+        border-radius: 1000px;
+    }
+    
+    #barMaxLimit {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+    
+    #control {
+        margin-top: 20px;
+    }
+    
+    .controlButton {
+        background: hsl(229, 57%, 11%);
+        height: 40px;
+        width: 40px;
+        vertical-align: top;
+        border-radius: 5px;
+        display: inline-block;
+        justify-content: center;
+        align-content: center;
+        margin: 5px;
+        cursor: pointer;
+    }
+    
+    .controlButton:first-of-type {
+        margin-left: 0;
+    }
+    /*------background image------------*/
+    
+    #background {
+        background-image: url('images/bg-desktop.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 50vh;
+        position: absolute;
+        top: 50vh;
+    }
+    /*----------mobile version (seeking responsiveness)------*/
+    
+    @media (max-width: 890px) {
+        #mainContent {
+            text-align: center;
+            width: 1calc(100%-40px);
+        }
+        .content {
+            display: inline-block;
+            margin: auto;
+        }
+        .controlButton {
+            background: hsl(229, 57%, 11%);
+            height: 50px;
+            width: 50px;
+            vertical-align: top;
+            border-radius: 10px;
+            display: inline-block;
+            justify-content: center;
+            align-content: center;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #leftside {
+            margin-bottom: 20px;
+            width: 200px;
+            padding-top: 50px;
+            border-radius: 10px 95px 10px 10px;
+        }
+        #rightside {
+            text-align: center;
+            left: -11px;
+            width: 265px;
+            padding-bottom: 50px;
+        }
+        #usage {
+            width: 250px;
+            left: 10px;
+        }
+        #comment {
+            text-align: center;
+            color: rgb(211, 210, 210);
+            margin-bottom: 20px;
+        }
+        #barMinLimit {
+            text-align: left;
+        }
+        #barMaxLimit {
+            bottom: 50px;
+        }
+        #usageBottom {
+            display: none;
+        }
+        #barBall {
+            left: 71.9%;
+        }
+        #colorFill {
+            width: 76.5%;
+        }
+        #dataLeft {
+            margin-top: 184px;
+            text-align: center;
+            border-radius: 10px;
+            right: 90px;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-weight: 400;
+        }
+        #dataRemaining {
+            font-size: 35px;
+        }
+        /*-------background----------*/
+        #background {
+            background-image: url('images/bg-mobile.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0vh;
+        }
+        /*------logo--------------*/
+        .logoSection {
+            margin-left: -45px;
+        }
+    }
